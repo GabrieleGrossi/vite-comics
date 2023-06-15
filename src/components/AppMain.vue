@@ -1,9 +1,11 @@
 <template>
-    <div>
-        <h1>
-            App Main
-        </h1>
-    </div>
+    <main>
+        <div class="main-part">
+            <h1>
+                 - - > Contents going here / - - 
+            </h1>
+        </div>
+    </main>
 </template>
 <script>
 export default {
@@ -15,6 +17,14 @@ export default {
     }
 }
 </script>
-<style lang="">
-    
+<style lang="scss" scoped>
+    main{
+        background-color: black;
+        color: white;
+        height: 100px;
+    }
+    .main-part{
+        width: 70%;
+        margin: 0 auto;
+    }
 </style>

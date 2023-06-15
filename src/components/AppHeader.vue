@@ -1,9 +1,9 @@
 <template>
-    <div class="flex">
-        <div>
-            <img src="../assets/img/dc-logo.png" alt="">
+    <header >
+        <div id="brand">
+            <img src="../assets/img/dc-logo.png" alt="Dc comics logo">
         </div>
-        <nav>
+        <nav id="top-navbar">
             <ul>
                 <li v-for="link in navbarLinks" :class="link.active ? 'active' : ''">
                     <a :href="link.link">
@@ -12,7 +12,7 @@
                 </li>
             </ul>
         </nav>
-    </div>
+    </header>
 </template>
 <script>
 export default {
@@ -48,7 +48,7 @@ export default {
                 {
                     link: '#',
                     text: 'Collectibles',
-                    active: true
+                    active: false
                 },
                 {
                     link: '#',
@@ -77,12 +77,41 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-    .flex{
-        display: flex;
-    }
-    li{
-        list-style-type: none;
+    @use '../styles/partials/mixins' as *;
+    @use '../styles/partials/variables' as *;
+
+    header{
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 2rem;
+
+        div#brand img{
+            height: 70px;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: $sectionsMargin;
+        }
+
+        nav#top-navbar ul{
+            @include flex();
+            margin-bottom: $sectionsMargin;
+            flex-direction: row;
+
+            li{
+                padding: 1rem;
+                font-size: .9rem;
+                font-weight: 600;
+                transition: background-color 1s ease;
+                //margin-bottom: 2rem;
+                padding-bottom: 5rem;
+                &.active,
+                &:hover{
+                    border-bottom: 8px solid $accentBg;
+                }
+            }
+        }
     }
 </style>    
