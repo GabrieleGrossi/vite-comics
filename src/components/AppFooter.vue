@@ -189,7 +189,9 @@ export default {
     }
 }
 </script>
-<style>
+<style lang="scss" scoped>
+    @use '../styles/partials/mixins' as *;
+    @use '../styles/partials/variables' as *;   
     div.upper-footer{
         background-image: url(../assets/img/footer-bg.jpg);
         height: 300px;
@@ -230,5 +232,16 @@ export default {
         display: flex;
         justify-content: space-between;
         margin: 0 auto;
+    }
+    div.bottom-footer div.container button{
+        background-color: transparent;
+        border: 2px solid $accentBg;
+        color: white;
+        padding: 0.8rem;
+        margin-top: 3rem
+    }
+    div.bottom-footer div.container h2{
+        color: $accentBg;
+        margin-top: 3rem;
     }
 </style>
