@@ -1,15 +1,49 @@
 <template>
     <div class="upper-footer">
-        <ul>
-            <h2>
-                DC COMICS
-            </h2>
-            <li v-for="link in footerLinks">
-                <a :href="link.link">
-                    {{ link.text }}
-                </a>
-            </li>
-        </ul>
+        <div>
+            <ul>
+                <h2>
+                    DC COMICS
+                </h2>
+                <li v-for="link in footerLinks">
+                    <a :href="link.link">
+                        {{ link.text }}
+                    </a>
+                </li>
+                <h2>
+                    SHOP
+                </h2>
+                <li v-for="link in shopLinks">
+                    <a :href="link.link">
+                        {{ link.text }}
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <h2>
+                    DC
+                </h2>
+                <li v-for="link in dcLinks">
+                    <a :href="link.link">
+                        {{ link.text }}
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <h2>
+                    SITES
+                </h2>
+                <li v-for="link in sitesLinks">
+                    <a :href="link.link">
+                        {{ link.text }}
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
     <div class="bottom-footer">
         buttons
@@ -52,7 +86,84 @@ export default {
                 {
                     link: '#',
                     text: 'News',
-                    active: false
+                }
+            ],
+            shopLinks : [
+                {
+                    link: '#',
+                    text: ' Shop DC'
+                },
+                {
+                    link: '#',
+                    text: ' Shop DC Collectibles'
+                }
+            ],
+            dcLinks : [
+                {
+                    link: '#',
+                    text: 'Terms Of Use',
+                },
+                {
+                    link: '#',
+                    text: 'Privacy policy (New)',
+                },
+                {
+                    link: '#',
+                    text: 'Ad Choices',
+                },
+                {
+                    link: '#',
+                    text: 'Advertising',
+                },
+                {
+                    link: '#',
+                    text: 'Jobs',
+                },
+                {
+                    link: '#',
+                    text: 'Subscritions',
+                },
+                {
+                    link: '#',
+                    text: 'Talent Workshop',
+                },
+                {
+                    link: '#',
+                    text: 'CPSC Certicates',
+                },
+                {
+                    link: '#',
+                    text: 'Ratings',
+                },
+                {
+                    link: '#',
+                    text: 'Shop Help',
+                },
+                {
+                    link: '#',
+                    text: 'Contact Us',
+                }
+            ],
+            sitesLinks : [
+                {
+                    link: '#',
+                    text: 'DC',
+                },
+                {
+                    link: '#',
+                    text: 'MAD Magazine',
+                },
+                {
+                    link: '#',
+                    text: 'DC Kids',
+                },
+                {
+                    link: '#',
+                    text: 'DC Universe',
+                },
+                {
+                    link: '#',
+                    text: 'DC Power Visa',
                 }
             ]
         }
@@ -65,7 +176,10 @@ export default {
         height: 300px;
         color: white;
         font-size: 0.8rem;
+        display: flex;
+        flex-direction: row;
     }
+    
     div.upper-footer ul li a {
         color: #858585;
     }
