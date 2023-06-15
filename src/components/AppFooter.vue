@@ -1,49 +1,52 @@
 <template>
     <div class="upper-footer">
-        <div>
-            <ul>
-                <h2>
-                    DC COMICS
-                </h2>
-                <li v-for="link in footerLinks">
-                    <a :href="link.link">
-                        {{ link.text }}
-                    </a>
-                </li>
-                <h2>
-                    SHOP
-                </h2>
-                <li v-for="link in shopLinks">
-                    <a :href="link.link">
-                        {{ link.text }}
-                    </a>
-                </li>
-            </ul>
+        <div class="link">
+            <div>
+                <ul>
+                    <h2>
+                        DC COMICS
+                    </h2>
+                    <li v-for="link in footerLinks">
+                        <a :href="link.link">
+                            {{ link.text }}
+                        </a>
+                    </li>
+                    <h2>
+                        SHOP
+                    </h2>
+                    <li v-for="link in shopLinks">
+                        <a :href="link.link">
+                            {{ link.text }}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <h2>
+                        DC
+                    </h2>
+                    <li v-for="link in dcLinks">
+                        <a :href="link.link">
+                            {{ link.text }}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <h2>
+                        SITES
+                    </h2>
+                    <li v-for="link in sitesLinks">
+                        <a :href="link.link">
+                            {{ link.text }}
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <ul>
-                <h2>
-                    DC
-                </h2>
-                <li v-for="link in dcLinks">
-                    <a :href="link.link">
-                        {{ link.text }}
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <ul>
-                <h2>
-                    SITES
-                </h2>
-                <li v-for="link in sitesLinks">
-                    <a :href="link.link">
-                        {{ link.text }}
-                    </a>
-                </li>
-            </ul>
-        </div>
+        <img src="../assets/img/dc-logo-bg.png" alt="Dc comics logo">
     </div>
     <div class="bottom-footer">
         buttons
@@ -179,9 +182,27 @@ export default {
         display: flex;
         flex-direction: row;
     }
-    
+    div.upper-footer div.link{
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+    }
+
+    div.upper-footer div.link div{
+        margin: 0 auto;
+    }
+    div.upper-footer div ul h2{
+        margin-top: 0.5rem;
+    }
+    div.upper-footer div ul li{
+        margin-top: 0.3rem;
+    }    
     div.upper-footer ul li a {
         color: #858585;
+    }
+    div.upper-footer img{
+        width: 300px;
+        height: 300px;
     }
     div.bottom-footer{
         background-color: #303030;
