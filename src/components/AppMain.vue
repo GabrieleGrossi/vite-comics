@@ -21,7 +21,8 @@ export default {
     main{
         background-color: black;
         color: white;
-        height: 100px;
+        height: 130px;
+        margin: 0 auto;
     }
     .main-part{
         width: 70%;

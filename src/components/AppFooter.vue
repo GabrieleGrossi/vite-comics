@@ -203,7 +203,8 @@ export default {
     div.upper-footer div.link{
         display: flex;
         flex-direction: row;
-        width: 60%;
+        width: 30%;
+        margin: 0 auto;
     }
 
     div.upper-footer div.link div{
@@ -221,6 +222,7 @@ export default {
     div.upper-footer img{
         width: 300px;
         height: 300px;
+        margin: 0 auto;
     }
     div.bottom-footer{
         background-color: #303030;

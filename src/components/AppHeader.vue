@@ -92,12 +92,10 @@ export default {
             height: 70px;
             display: block;
             margin: 0 auto;
-            margin-bottom: $sectionsMargin;
         }
 
         nav#top-navbar ul{
             @include flex();
-            margin-bottom: $sectionsMargin;
             flex-direction: row;
 
             li{
@@ -107,6 +105,7 @@ export default {
                 transition: background-color 1s ease;
                 //margin-bottom: 2rem;
                 padding-bottom: 5rem;
+                border-bottom: 8px solid white;
                 &.active,
                 &:hover{
                     border-bottom: 8px solid $accentBg;
