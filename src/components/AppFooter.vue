@@ -48,8 +48,24 @@
         </div>
         <img src="../assets/img/dc-logo-bg.png" alt="Dc comics logo">
     </div>
-    <div class="bottom-footer">
-        buttons
+    <div class="bottom-footer">        
+        <div class="container">
+            <div>
+                <button>
+                    SIGN-UP NOW!
+                </button>
+            </div>
+            <div>
+                <h2>
+                    FOLLOW US
+                </h2>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-pinterest"></i>
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+        </div>
     </div>
 </template>
 <script>
@@ -208,5 +224,11 @@ export default {
         background-color: #303030;
         height: 130px;
         color: white;
+    }
+    div.bottom-footer div.container{
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
     }
 </style>
