@@ -7,6 +7,9 @@
             <AppCard v-for="card in cards"
                 :thumb="card.thumb"
                 :series="card.series"/>
+                <button>
+            LOAD MORE
+        </button>
         </div>
     </main>
 </template>
@@ -99,6 +102,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../styles/partials/variables';
     main{
         background-color: black;
         color: white;
@@ -115,5 +119,13 @@ export default {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+    }
+    button{
+        background-color: $accentBg;
+        border: 1px solid $accentBg;
+        margin: 0 auto;
+        padding: 1rem;
+        margin-bottom: 2rem;
+        color: white;
     }
 </style>
