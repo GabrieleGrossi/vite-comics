@@ -1,5 +1,8 @@
 <template>
     <main>
+        <div class="jumbotrone">
+
+        </div>
         <div class="main-part">
             <AppCard v-for="card in cards"
                 :thumb="card.thumb"
@@ -100,6 +103,11 @@ export default {
         background-color: black;
         color: white;
         margin: 0 auto;
+    }
+    .jumbotrone{
+        background-image: url(../assets/img/jumbotron.jpg);
+        background-size: cover;
+        height: 400px;
     }
     .main-part{
         width: 70%;
