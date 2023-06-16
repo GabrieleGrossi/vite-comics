@@ -215,6 +215,9 @@ export default {
     }
     div.upper-footer div ul li{
         margin-top: 0.3rem;
+    }
+    div.upper-footer div ul li :hover{
+        color: white;
     }    
     div.upper-footer ul li a {
         color: #858585;
