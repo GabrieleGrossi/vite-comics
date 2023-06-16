@@ -194,7 +194,8 @@ export default {
     @use '../styles/partials/variables' as *;   
     div.upper-footer{
         background-image: url(../assets/img/footer-bg.jpg);
-        height: 300px;
+        background-size: cover;
+        height: 400px;
         color: white;
         font-size: 0.8rem;
         display: flex;
@@ -223,8 +224,8 @@ export default {
         color: #858585;
     }
     div.upper-footer img{
-        width: 300px;
-        height: 300px;
+        width: 400px;
+        height: 400px;
         margin: 0 auto;
     }
     div.bottom-footer{
