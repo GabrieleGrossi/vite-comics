@@ -55,15 +55,15 @@
                     SIGN-UP NOW!
                 </button>
             </div>
-            <div>
+            <div class="flex">
                 <h2>
                     FOLLOW US
                 </h2>
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-square-twitter"></i>
-                <i class="fa-brands fa-youtube"></i>
-                <i class="fa-brands fa-pinterest"></i>
-                <i class="fa-solid fa-location-dot"></i>
+                <img src="../assets/img/footer-facebook.png" alt="">
+                <img src="../assets/img/footer-twitter.png" alt="">
+                <img src="../assets/img/footer-youtube.png" alt="">
+                <img src="../assets/img/footer-pinterest.png" alt="">
+                <img src="../assets/img/footer-periscope.png" alt="">
             </div>
         </div>
     </div>
@@ -244,10 +244,16 @@ export default {
         border: 2px solid $accentBg;
         color: white;
         padding: 0.8rem;
-        margin-top: 3rem
     }
-    div.bottom-footer div.container h2{
+    div.bottom-footer div.container{
         color: $accentBg;
-        margin-top: 3rem;
+        padding-top: 3rem;
+    }
+    div.flex img{
+        width: 40px;
+        height: 40px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0.5rem;
     }
 </style>
