@@ -6,9 +6,12 @@
     </main>
 </template>
 <script>
-import AppCards from './AppCards.vue';
+import AppCard from './cards/AppCard.vue'
 export default {
     name: 'AppMain',
+    components:{
+        AppCard
+    },
     data(){
         return{
 
